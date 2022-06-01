@@ -11,6 +11,11 @@ document.getElementById('start').addEventListener('click',()=>{
 document.getElementById('stop').addEventListener('click', ()=>{
     clearInterval(int);
 });
+document.getElementById('reset').addEventListener('click', ()=>{
+    clearInterval(int);
+    [millisec,sec,min,hours] = [0,0,0,0];
+    timeRef.innerHTML = '00 : 00 : 00 : 000';
+});
 
 
 
